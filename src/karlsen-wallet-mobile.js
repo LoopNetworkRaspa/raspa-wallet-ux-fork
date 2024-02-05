@@ -592,7 +592,8 @@ export class KarlsenWalletMobile extends KarlsenWalletUI{
 	openAddressExplorer(address){
 		if (!address)
 			return
-		let url = `https://explorer.karlsencoin.com/addresses/${address}`;
+		// let url = `https://explorer.karlsencoin.com/addresses/${address}`;
+		let url = `http://localhost:3000/addresses/${address}`;
 
 		window.open(url);
 	}
